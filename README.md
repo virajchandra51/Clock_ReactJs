@@ -1,4 +1,7 @@
-# Wave_ThreeJs
+# Clock_ReactJs
+
+An Analog Clock Made on React
+
 1.  Install dependencies:
 
         yarn
