@@ -11,6 +11,7 @@ class ClockApp extends React.Component {
       super();
 
       const d = new Date();
+      console.log(d);
       const hour = d.getHours() % 12;
       const minute = d.getMinutes();
       const second = d.getSeconds(); 
@@ -21,11 +22,11 @@ class ClockApp extends React.Component {
           hourString: this._getNumber(hour),
           minuteString: this._getNumber(minute),
           secondString: this._getNumber(second),
-          hourDeg: 360 / 12 * hour -90,
-          minuteDeg: 360 / 60 * minute -90,
-          secondDeg: 360 / 60 * second -90
+          hourDeg: 360 / 12 * hour -90 ,
+          minuteDeg: 360 / 60 * minute-90 ,
+          secondDeg: 360 / 60 * second-90 
       };
-
+      console.log(this.state);
       setInterval(this._tick.bind(this), 1000);
   }
 
