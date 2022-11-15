@@ -42,7 +42,7 @@ class ClockApp extends React.Component {
       }
   }
 
-  _tick(sheet) {
+  _tick() {
       const d = new Date(); 
       const hour = d.getHours() % 12;
       const minute = d.getMinutes();
